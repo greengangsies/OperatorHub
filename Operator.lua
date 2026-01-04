@@ -23,7 +23,7 @@ local CONFIG = {
     WorkspaceFolder = "OperatorHub",
     AssetsFolder = "assets",
     FontFile = "Minecraft.ttf",
-    GitHubRepo = "YourUsername/YourRepo", -- Change this to your GitHub repo (format: username/repository)
+    GitHubRepo = "greengangsies/OperatorHub", -- Change this to your GitHub repo (format: username/repository)
     GitHubBranch = "main",
     GitHubScriptsPath = "commands",
 }

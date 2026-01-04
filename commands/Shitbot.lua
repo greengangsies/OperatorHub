@@ -3203,5 +3203,15 @@ print("   Addon System Active!")
 print("   Use _G.ShitbotAPI or shared.ShitbotAPI")
 print("═══════════════════════════════════════════════════")
 
-_G.OperatorHubAddMessage("Shithub Loaded!", _G.OperatorHubColors.green)
-_G.OperatorHubAddMessage("Shitbot Made by Spooky + Sanchez", _G.OperatorHubColors.gold)
+-- Copy this function into any script:
+
+local function msg(text, color)
+    if _G.OperatorHubAddMessage then
+        _G.OperatorHubAddMessage(text, _G.OperatorHubColors[color or "white"])
+    end
+end
+
+-- Usage:
+
+msg("Shitbot Loaded", "green")
+msg("Shitbot Made By Spooky and Sanchez", "gold")
